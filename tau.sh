@@ -3,16 +3,16 @@
 #Should work on any debian based distro and fully tested on ubuntu 12.xx-14.xx-16.xx
 #by : lod
 
-echo  _        _______  ______  
-echo ( \      (  ___  )(  __  \ 
-echo | (      | (   ) || (  \  )
-echo | |      | |   | || |   ) |
-echo | |      | |   | || |   | |
-echo | |      | |   | || |   ) |
-echo | (____/\| (___) || (__/  )
-echo (_______/(_______)(______/ 
+echo " _        _______  ______  "
+echo "( \      (  ___  )(  __  \ "
+echo "| (      | (   ) || (  \  )"
+echo "| |      | |   | || |   ) |"
+echo "| |      | |   | || |   | |"
+echo "| |      | |   | || |   ) |"
+echo "| (____/\| (___) || (__/  )"
+echo "(_______/(_______)(______/ "
 echo
-echo Tau Automaic installer By: LOD                       
+echo "Tau Automaic installer By: LOD                       "
 
 
 read -p "Do you wish to download dependencies, build and install Taucoin-QT wallet? " -n 1 -r
@@ -44,6 +44,10 @@ echo "building Tau "
 
  echo "now the slow part of compiling "
 make ;
-
+echo "almost done !!"
 make install ;
+ echo "All done , thanks for being patient !! ;) "
+ 
+ echo "Now you can start the deamon with /" taucoind /" to work with CLI"
+echo "or Start QT with /"taucoin-qt/" wallet if you have a desktop environment"
 fi
