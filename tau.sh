@@ -11,7 +11,7 @@ echo "| |      | |   | || |   ) |"
 echo "| (____/\| (___) || (__/  )"
 echo "(_______/(_______)(______/ "
 echo ""
-echo "Tau Automaic installer By: LOD"
+echo "Tau Automaic installer By LOD"
 read -r -p "Do you wish to download dependencies build and install Taucoin-QT wallet?" response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
