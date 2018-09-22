@@ -12,12 +12,10 @@ echo "| (____/\| (___) || (__/  )"
 echo "(_______/(_______)(______/ "
 echo ""
 echo "Tau Automaic installer By LOD"
-read -r -p "Do you wish to download dependencies build and install Taucoin-QT wallet?" response
-if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
-then
 echo "this will take some time depending on your CPU/RAM/Internet speed"
-echo "please be patient !! :) "
+echo "please be patient !! "
 echo "adding bitcoin repo for levelDB "
+set -x
 sudo add-apt-repository ppa:bitcoin/bitcoin -y;
 echo "updating all repos "
 sudo apt-get update;
@@ -34,7 +32,6 @@ echo "now the slow part of compiling "
 make ;
 echo "almost done !!"
 make install ;
-echo "All done , thanks for being patient !! ;) "
+echo "All done , thanks for being patient !! "
 echo "Now you can start the deamon with /" taucoind /" to work with CLI"
 echo "or Start QT with /"taucoin-qt/" wallet if you have a desktop environment"
-fi
