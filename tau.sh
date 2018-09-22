@@ -12,7 +12,7 @@ echo "| (____/\| (___) || (__/  )"
 echo "(_______/(_______)(______/ "
 echo ""
 echo "Tau Automaic installer By: LOD                       "
-read -p "Do you wish to download dependencies, build and install Taucoin-QT wallet? " -n 1 -r
+read -p "Do you wish to download dependencies, build and install Taucoin-QT wallet? " -n 1
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
