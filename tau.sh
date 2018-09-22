@@ -15,7 +15,6 @@ echo "Tau Automaic installer By LOD"
 echo "this will take some time depending on your CPU/RAM/Internet speed"
 echo "please be patient !! "
 echo "adding bitcoin repo for levelDB "
-set -x
 sudo add-apt-repository ppa:bitcoin/bitcoin -y;
 echo "updating all repos "
 sudo apt-get update;
